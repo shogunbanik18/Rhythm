@@ -1,0 +1,340 @@
+/* CSS RESET PROPERTY  */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+    /* INITIALIZING THE COLOR PALETTE  */
+:root{
+    --primary: #ffffff;
+    --dark: #333;
+    --btncolor: #8E847C;
+    --brown:rgb(44, 4, 4);
+    --yellow:rgb(157, 255, 0);
+}
+
+/* FOR SMOOTH SCROLLING  */
+html{
+    scroll-behavior: smooth;
+}
+
+/* STYLING THE HEADER PART  */
+body{
+    position: absolute;
+    background-image: url("bg1.png") ;
+    background-size: cover;
+    background-attachment: fixed;
+    /* width: 1400px; */
+    height:1080px;
+}
+
+
+/* TARGETTING THE LOGO */
+.left img{
+    position: fixed;
+    width:70px ;
+    height: 70px;
+    margin-left:89px ;
+    margin-top: 20px;
+
+}
+
+
+/* TARGETTING THE HAMBERGER ICON */
+
+.hamberger{
+    border: none;
+    position: fixed;
+    margin-left: 1280px;
+    margin-top: 36px;
+    z-index: -1;
+    background:  transparent; 
+    outline: none;
+    cursor: pointer;
+}
+/* TARGETTING THE IMAGE  */
+.hamberger img{
+    color: var(--primary);
+    filter: invert(100%);
+    /* position: absolute; */
+    /* margin-right: 20px; */
+}
+
+/* STYLING THE INTRO PART  */
+.leftintro h1{
+    width: 555px;
+    height:100px;
+    position: fixed;
+    margin-top: 370px;
+    margin-left: 30px;
+    color: white;
+    font-size: 76px;
+    /* font-family: sans-serif; */
+    font-family:  sans-serif;
+    font-weight: 50;
+    opacity: 90%;
+}
+
+/* TARGETTING THE PARAGRAPH  */
+.leftintro p#about{
+    width: 450px;
+    /* height:100px; */
+    position: fixed;
+    margin-top: 470px;
+    margin-left: 30px;
+    color: white;
+    font-size: 14px;
+    /* font-family: sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+/* TARGETTING TEH RIGHT INTRO  */
+.rightintro{
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: 400px;
+}
+/* TARGETTING THE HEADING 2 PLAYLIST */
+.rightintro h2#playlist{
+    position:fixed ;
+    color: var(--primary);
+    font-family: sans-serif;  
+    font-size: 80px;
+    font-weight: 50;
+    margin-top: -165px;
+    opacity: 80%;
+}
+/* TARGETTING THE HEADING 2 TOP 10  */
+.rightintro h2#top10{
+    position:fixed ;
+    color: var(--primary);
+    font-family: sans-serif;  
+    font-size: 25px;
+    font-weight: 50;
+    margin-top: -65px;
+}
+/* TARGETTING THE BUTTON  */
+.rightintro button#btn{
+    width: 300px ;
+    height: 70px;
+    position: fixed;
+    background-color: var(--btncolor);
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    margin-left: -30px;
+    /* ADDING A TRANSITION EFFECT  */
+    transition: all 1s ease;
+
+}
+/* ADDING A HOVER EFFECT  */
+.rightintro button#btn:hover{
+    background-color:var(--brown);
+    border: 2px solid var(--primary);
+}
+
+
+/* LISTEN BUTTON  */
+h5#Listen{
+    color: var(--primary);
+    font-weight: 200;
+    font-size: 25px;
+    margin-top: 2px;
+    margin-left: -55px;
+    /* ADDING A TRANSITION EFFECT  */
+    transition: all 1s ease;
+}
+/* LISTEN BUTTON HOVER EFFECT  */
+h5#Listen:hover{
+    color: var(--yellow);
+    cursor: pointer;
+}
+/* PLAY BUTTON   */
+#btn img#play{
+    margin-right: -197px;
+    position: fixed;
+    margin-top: -27px;
+    margin-left: 75px;
+    cursor: pointer;
+
+}
+/* TARGETTING THE WAVE PART  */
+nav img#wave{
+    /* margin-top: 800px; */
+    /* position: fixed; */
+    width: 1349px;
+    margin-top: 550px;
+    position: fixed;
+}
+
+/* TARGETTING THE LIST AND UL  */
+ul{
+    position: fixed;
+    margin-left: 935px;
+    margin-top: 516px;
+}
+ /* TARGETTING THE LIST  */
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+/* TARGETTING THE FOOTER PART  */
+
+footer#footer{
+    position: fixed;
+    background-color: var(--brown);
+    color: var(--primary);
+    /* display: inline-block; */
+    display: block;
+    width: 100%;
+    margin-top: 597px;
+    text-align: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+
+/* TARGETTING THE HAMBERGER FUNCTION PART  */
+.site-main-wrapper{
+    position: relative;
+}
+
+/* TARGETTING THE HAMBERGER ICON  */
+.hamberger {
+    display: flex;
+    z-index: 11;
+    border: none;
+    width: 19px;
+    height: 24px;
+    position: fixed;
+    margin-left: 900px;
+    margin-top: 38px;
+    z-index: -1;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+/* TARGETTING THE HAMBERGER MENU*/
+.hamberger{
+    display: flex;
+    position: absolute;
+    top:40px ;
+    right: 18px;
+    z-index: 11;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+/* TARGETTING THE HAMBERGER IMAGE  */
+.hamberger img{
+    position: fixed;
+    width: 43px;
+    margin-top:-37px ;
+    margin-right: -15px;
+    margin-left: 1223px;
+}
+
+
+/* TARGETTING THE MOBILE NAVIGATION OFG THE SIDE SCREEN  */
+.mobile-nav{
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1001;
+    background: var(--brown);
+    width: 375px;
+    height: 100%;
+    padding: 2rem;
+    padding-top: 5rem;
+      /* ADDING A TRANSFORM PROPERTY TO THE MOBILE NAV  */
+      transform: translateX(312%);
+      /* -webkit-transform: translateX(-100%);
+      -moz-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+      -o-transform: translateX(-100%); */
+      transition: all 0.7s ease;
+      /* clip-path: circle(50%); */
+}
+
+/* ADDING ANOTHE CLASS TO BE ADDED DYNAMICALLY  */
+.open{
+    /* ADDING A TRANSFORM PROPERTY TO THE MOBILE NAV  */
+    /* clip-path: circle(20px ); */
+    transform: translateX(240%);
+    transition: all 0.5s ease-in-out;
+
+    /* -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0); */
+}
+
+.song{
+    transform: translateX(-100%);
+}
+
+.songopen{
+    transform : translateX(0%)
+}
+
+
+/* TARGETTING THE CLOSE BUTTON  */
+.No{
+    display: flex;
+    position: fixed;
+    top: 36px;
+    right: 166px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+
+}
+/* TARGETTING THE CLOSE BUTTON IMG  */
+.No img{
+    margin-right: 20px;
+    width: 20px;
+    filter: invert(100%);
+}
+/* TARGETTING THE LIST UNDER MENU  */
+.mobile-nav ul {
+    list-style: none;
+    position: absolute;
+    margin-left: 0px;
+    margin-right: 0px;
+    z-index: 11;
+    display: flex;
+}
+
+/* TARGETTING THE LIST  */
+.mobile-nav ul1 li{
+    display: flex;
+    list-style: none;
+}
+
+/* TARGETTING THE LINKS UNDER THE LIST  */
+.mobile-nav ul1 li a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: var(--primary);
+    padding: 20px;
+    font-weight: 500;
+    margin-left: 47px;
+    font-size: 23px;
+    /* ADDING A TRANSITION EFFECT ; */
+    transition: all .8s ease;
+}
+/* ADDING A HOVER EFFECT TO THE LINKS  */
+.mobile-nav ul1 li a:hover{
+    color: var(--yellow);
+}
+
